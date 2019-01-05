@@ -5,30 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>npm</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <header>
     <nav>
-      <div class="navbar">
+      <div class="nav-left">
         <a class="heart" href="#">♥︎</a>
         <span class="acronym">Nagging Parental Malignancy</span>
       </div>
-      <ul class="navLinks">
-        <li><a class="navLink" href="https://npm-enterprise.com">npm Enterprise</a></li>
-        <li><a class="navLink" href="https://www.npmjs.com/features">Features</a></li>
-        <li><a class="navLink" href="https://www.npmjs.com/pricing">Pricing</a></li>
-        <li><a class="navLink" href="https://docs.npmjs.com">Docs</a></li>
-        <li><a class="navLink" href="https://www.npmjs.com/support">Support</a></li>
+      <ul class="nav-links">
+        <li><a href="https://npm-enterprise.com">npm Enterprise</a></li>
+        <li><a href="https://www.npmjs.com/features">Features</a></li>
+        <li><a href="https://www.npmjs.com/pricing">Pricing</a></li>
+        <li><a href="https://docs.npmjs.com">Docs</a></li>
+        <li><a href="https://www.npmjs.com/support">Support</a></li>
       </ul> 
     </nav>
-    <div>
-      <a class="logo" href="#"><img src="images/npm-logo.png"></a>
-      <div class="header-search">
+    <div class="header-lower">
+      <a href="#"><img class="logo" src="images/npm-logo.png"></a>
+      <div class="search-container">
         <form method="GET" action="https://www.npmjs.com/search">
+          <div class="search-icon">X</div>
           <input placeholder="Search packages">
           <button type="submit">Search</button>
         </form>
+      </div>
+      <div class="user-actions">
+        <a href="https://www.npmjs.com/login">log in</a>
+        <span> or </span>
+        <a href="https://www.npmjs.com/signup">sign up</a>
       </div>
     </div>
   </header>
