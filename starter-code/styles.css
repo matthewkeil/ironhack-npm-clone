@@ -140,9 +140,28 @@ main {
     background-image: url('images/city-scape.svg');
     background-size: 100% 100%;
     color: white;
-    padding-top: 0;
+    padding-top: 60%;
     background-position: top;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 479px) {
+    .hero {
+        padding-top: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero {
+        background-size: 100% 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero {
+        background-size: 100% 100%;
+        padding-top: 0;
+    }
 }
 
 .hero-container {
@@ -153,7 +172,12 @@ main {
 
 .hero-content {
     padding: 4rem;
-    width: 50%;
+}
+
+@media screen and (min-width: 60em) {
+    .hero-content {
+        width: 50%;
+    }
 }
 
 .hero h1 {
@@ -189,7 +213,7 @@ main {
     outline: none;
     font-weight: 500;
     border-radius: 20px;
-    padding: 7px 58px 8px 58px;
+    padding: 7px 18px 8px 18px;
     margin-bottom: 0;
     display: inline-block;
     text-align: center;
