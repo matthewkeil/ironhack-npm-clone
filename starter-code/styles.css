@@ -1,3 +1,35 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --wombat-red-hover: #c40b0a;
+    --button-green: #00C642;
+    --wombat-yellow: #FFCD3A;
+    --wombat-violet: #8956FF;
+    --wombat-purple: #C836C3;
+    --wombat-green: #00C642;
+    --wombat-teal: #29ABE2;
+    --light-blue: #70b8ff;
+    --wombat-red: #cb3837;
+    --header-color: #222;
+    --bg-dark: #cb3837;
+    --npmRed: #cb3837;
+    --blue: #357edd;
+    --bg: #fff;
+    --code: "Fira Mono", "Andale Mono", "Consolas", monospace;
+    --code-ls: 0px;
+    --code-lh: 24px;
+    --standardCardTransition: all 0.2s ease;
+    --header-letter-spacing: 0.015625em;
+    --readme-font-size: 18px;
+    --readme-line-height: 1.6;
+    --copy-color: rgba(0,0,0,0.85);
+    --code-bg: #f7f7f7;
+    --code-box-radius: 2px;
+}
+
 html {
     line-height: 1.15;
     font-family: 'Source Sans Pro', sans-serif;
@@ -6,6 +38,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -95,4 +128,307 @@ nav {
     padding-top: .5rem;
     padding-bottom: .5rem;
     margin-left: 1rem;
+}
+
+main {
+    font-family: "Open Sans", OpenSans, sans-serif;
+}
+
+.hero {
+    display: block;
+    background-color: rgb(32, 101, 136);
+    background-image: url('images/city-scape.svg');
+    background-size: 100% 100%;
+    color: white;
+    padding-top: 0;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.hero-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 64rem;
+}
+
+.hero-content {
+    padding: 4rem;
+    width: 50%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #f4f4f4;
+    font-weight: 200;
+    margin: 2rem 0;
+    text-size-adjust: 100%;
+}
+
+.hero span {
+    font-size: 1.25rem;
+    color: #f4f4f4;
+    font-weight: 200;
+    line-height: 1.5;
+    text-size-adjust: 100%;
+}
+
+.hero-button {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    max-width: 64rem;
+    display: table;
+}
+
+.hero .btn {
+    background-color: #f09233;
+    color: #fff;
+    outline: none;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 7px 58px 8px 58px;
+    margin-bottom: 0;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 1.35;
+}
+
+.collab {
+    background-color: #273547 !important;
+    color: white !important;
+}
+
+.collab-container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 8rem;
+    max-width: 64rem;
+}
+
+.collab-image {
+    float: left;
+    width: 50%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+}
+
+.collab-image img {
+    max-width: 100%;
+    border-style: none;
+    text-align: center;
+}
+
+.collab-content {
+    float: left;
+    width: 50%;
+    padding-left: 4rem;
+}
+
+.collab-content h2 {
+    letter-spacing: 0em;
+    font-size: 2.25rem;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.collab-content ul {
+    display: block;
+    line-height: 1.5;
+    font-weight: 400;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
+    padding-inline-start: 40px;
+    letter-spacing: 0em;
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+
+.collab-content li {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    display: list-item;
+}
+
+.collab-content .btn-ctn {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 4rem;
+    width: 90%;
+    max-width: 32rem;
+    display: table;
+}
+
+.collab-content .btn {
+    display: block;
+    background-color: #cb3837;
+    outline: none;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 20px;
+    padding: 7px 18px 8px 18px;
+    font-size: 18px;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-bottom: 0;
+    cursor: pointer;
+    line-height: 1.35;
+    width: 90%;
+}
+
+.collab-content a {
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.boxes {
+    background-color: #206F9C;
+    color: white;
+    background-image: url("images/forklift.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.boxes-wrapper {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.boxes-container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 64rem;
+
+}
+
+.boxes-content {
+    width: 40%;
+    padding: .5rem;
+}
+
+.boxes-content h2 {
+    font-size: 2.25rem;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.boxes-content p {
+    line-height: 1.5;
+    font-weight: 400;   
+}
+
+.boxes-content .btn-ctn {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.boxes-content a {
+    outline: none;
+    color: white;
+    background-color: #34495e;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 20px;
+    font-size: 16px;
+    line-height: 1.35;
+    border-radius: 20px;
+}
+
+.features-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 64rem;
+}
+
+.features-content {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.features-content h2 {
+    font-size: 2.25rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: .25rem;
+    font-weight: 200;
+}
+
+.features-content p {
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.features {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.feature-container {
+    width: 33.33%;
+    padding: .5rem;
+    float: left;
+}
+
+.feature-content {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.features img {
+    height: 100px;
+    border-style: none;
+    text-align: center;
+    max-width: 100%;
+}
+
+.feature-text {
+    text-align: center;
+}
+
+.feature-text h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.feature-text p {
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    line-height: 1.5;
+}
+
+.feature-text a {
+    color: #cb3837;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.5;
 }
