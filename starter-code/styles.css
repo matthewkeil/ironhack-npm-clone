@@ -56,6 +56,7 @@ header a {
     text-decoration: none;
     color: #222;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .nav-container {
@@ -97,6 +98,7 @@ nav ul {
 
 
 nav li {
+    font-size: 14px;
     flex-grow: 1;
     display: block;
     margin-right: 1rem;
@@ -133,44 +135,43 @@ nav li {
     flex-grow: 1;
 }
 
-.links {
+.links-content {
     display: flex;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
     max-width: 96rem;
 }
 
-.logo {
+.logo-container {
     display: block;
-    margin-top: .5rem;
+    margin-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 1rem;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     min-width: 0;
     min-height: 0;
 }
 
-.logo img {
-    width: 70px;
-    order: 1;
+.logo {
+    width: 80px;
+    overflow: hidden;
 }
 
 .search-container {
     color: #222;
     position: relative;
     width: 100%;
-    order: 2;
+    order: 1;
     flex: 1 1 auto;
     min-width: 0;
     min-height: 0;
 }
 
 .search-container form {
-    padding-left: 1;
-    padding-right: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
     background-color: transparent;
@@ -290,34 +291,36 @@ nav li {
 }
 
 .user-action-container {
-    order: 3;
     display: block;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    position: relative;
+    order: 2;
+    flex: 0 1 auto;
+    min-width: 0;
+    min-height: 0;
     margin-left: 1rem;
-    flex-grow: 0;
     margin-top: .5rem;
-}
+ }
 
 .user-action-content {
+    display: flex;
     padding-top: .25rem;
     align-self: center;
-    align-content: center;
-    display: flex;
+    align-items: center;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 600;
+    white-space: nowrap;
 }
 
-.user-actions a {
-    font-size: 1rem;
-    text-decoration: none;
+.user-action-content a {
+    opacity: 1;
     padding: .25rem;
     color: rgba(0, 0, 0, .7);
     line-height: 1.5;
-    font-weight: 600;
     border-radius: .25rem;
-    background-color: transparent;
 }
 
-.user-actions span {
+.user-action-content span {
     text-transform: none;
     color: rgba(0, 0, 0, .6);
     white-space: nowrap;
@@ -331,7 +334,7 @@ main {
 
 .hero {
     display: block;
-    background-color: rgb(32, 101, 136);
+    background-color: rgb(29, 78, 105);
     background-image: url('images/city-scape.svg');
     background-size: 100% 100%;
     color: white;
